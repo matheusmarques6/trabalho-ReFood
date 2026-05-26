@@ -91,10 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
         form.classList.remove("was-validated");
         setLoadingState(false);
-        showFormStatus(
-          "Mensagem enviada com sucesso. Retornaremos em breve.",
-          "success"
-        );
+        showFormStatus("Mensagem enviada com sucesso!", "success");
       }, 1200);
     });
   }
@@ -145,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton.classList.toggle("is-loading", isLoading);
     submitButtonText.textContent = isLoading
       ? "Enviando..."
-      : "Enviar mensagem";
+      : "Enviar";
   }
 
   function showFormStatus(message, type) {
