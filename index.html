@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReFood</title>
+
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">ReFood</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#problema">Problema</a>
+      <a href="#solucao">Solução</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#contato">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>Menos desperdício. Mais futuro.</h1>
+
+      <p>
+        O ReFood conecta supermercados, agricultores,
+        ONGs e famílias para transformar excedentes
+        alimentares em oportunidade.
+      </p>
+
+      <a href="#solucao" class="btn">
+        Conheça a solução
+      </a>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section id="problema" class="section">
+    <h2>O Problema</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Supermercados</h3>
+        <p>
+          Toneladas de alimentos são descartadas diariamente
+          por falta de logística e distribuição eficiente.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Agricultores</h3>
+        <p>
+          Excedentes da produção acabam apodrecendo
+          no campo sem aproveitamento.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Famílias</h3>
+        <p>
+          Milhares de famílias enfrentam insegurança alimentar
+          e dificuldade de acesso a produtos básicos.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section id="solucao" class="section green">
+    <h2>A Solução ReFood</h2>
+
+    <div class="solution-content">
+
+      <div>
+        <h3>Como funciona?</h3>
+
+        <p>
+          O ReFood transforma excedentes alimentares
+          em valor real através de uma plataforma inteligente.
+        </p>
+
+        <ul>
+          <li>Cadastro de excedentes</li>
+          <li>Conexão em tempo real</li>
+          <li>Retirada simplificada</li>
+          <li>Créditos ReCoin</li>
+          <li>Impacto social e ambiental</li>
+        </ul>
+      </div>
+
+      <img src="assets/farmer.jpeg" alt="Agricultor usando celular">
+    </div>
+  </section>
+
+  <!-- IMPACTO -->
+  <section id="impacto" class="section">
+    <h2>Nosso Impacto</h2>
+
+    <div class="impact-grid">
+
+      <div class="impact-card">
+        <span class="number">70%</span>
+        <p>de desconto em alimentos</p>
+      </div>
+
+      <div class="impact-card">
+        <span class="number">194</span>
+        <p>bancos de alimentos no Brasil</p>
+      </div>
+
+      <div class="impact-card">
+        <span class="number">4 milhões</span>
+        <p>de agricultores familiares</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section green">
+    <h2>Fale Conosco</h2>
+
+    <form id="contactForm">
+
+      <div class="input-group">
+        <label for="nome">Nome</label>
+
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          minlength="3"
+          placeholder="Digite seu nome"
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="email">E-mail</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Digite seu e-mail"
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="telefone">Telefone</label>
+
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          pattern="[0-9]{11}"
+          required
+          placeholder="11999999999"
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="mensagem">Mensagem</label>
+
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          required
+          minlength="10"
+          placeholder="Digite sua mensagem"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn">
+        Enviar
+      </button>
+
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ReFood - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
