@@ -2,197 +2,491 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ReFood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="ReFood conecta supermercados, agricultores e familias para reduzir desperdicio e ampliar o acesso a alimentos."
+  />
+  <title>ReFood | Menos desperdicio. Mais futuro.</title>
 
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark py-0">
+      <div class="container">
+        <a class="navbar-brand brand-mark" href="#home">
+          <span>Re</span>Food
+        </a>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">ReFood</div>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Abrir navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#problema">Problema</a>
-      <a href="#solucao">Solução</a>
-      <a href="#impacto">Impacto</a>
-      <a href="#contato">Fale Conosco</a>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4 mb-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-underline" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-underline" href="#problema">Problema</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-underline" href="#solucao">Solu&ccedil;&atilde;o</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-underline" href="#impacto">Impacto</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-sm btn-nav-contact ms-lg-4" href="#contato">
+            Fale Conosco
+          </a>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <!-- HOME -->
-  <section id="home" class="hero">
-    <div class="overlay"></div>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container position-relative">
+        <div class="row align-items-center hero-grid">
+          <div class="col-lg-7">
+            <span class="hero-kicker hero-sequence">
+              Da sobra ao acesso
+            </span>
 
-    <div class="hero-content">
-      <h1>Menos desperdício. Mais futuro.</h1>
+            <h1 class="hero-title hero-sequence">
+              Menos desperdicio. Mais alimento na mesa.
+            </h1>
 
-      <p>
-        O ReFood conecta supermercados, agricultores,
-        ONGs e famílias para transformar excedentes
-        alimentares em oportunidade.
-      </p>
+            <p class="hero-text hero-sequence">
+              O ReFood conecta supermercados, agricultores, ONGs e familias
+              para transformar excedentes alimentares em uma operacao mais
+              rapida, justa e rastreavel.
+            </p>
 
-      <a href="#solucao" class="btn">
-        Conheça a solução
+            <div class="hero-actions hero-sequence">
+              <a href="#solucao" class="btn btn-primary btn-lg btn-hero">
+                Conheca a solucao
+              </a>
+              <a href="#impacto" class="btn btn-outline-light btn-lg btn-hero-outline">
+                Ver impacto
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#problema" class="scroll-cue" aria-label="Rolar para a proxima secao">
+        <span>Explore</span>
+        <span class="scroll-arrow"></span>
       </a>
+    </section>
+
+    <section id="problema" class="content-section">
+      <div class="container">
+        <div class="section-heading text-center reveal">
+          <span class="section-tag">O problema hoje</span>
+          <h2>Excedente existe. Distribuicao eficiente ainda nao.</h2>
+          <p>
+            Enquanto alimentos bons se perdem no varejo e no campo, milhares de
+            familias seguem sem acesso regular a itens basicos.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="issue-card reveal" style="--reveal-delay: 0ms;">
+              <div class="icon-shell" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path d="M10 26h44" />
+                  <path d="M14 26l4-12h28l4 12" />
+                  <path d="M14 26v24h36V26" />
+                  <path d="M22 50V36h12v14" />
+                  <path d="M41 34h6" />
+                </svg>
+              </div>
+
+              <h3>Supermercados</h3>
+              <p>
+                Produtos proximos do vencimento ou fora do padrao comercial
+                acabam descartados por falta de um fluxo rapido de doacao,
+                venda social ou retirada local.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="issue-card reveal" style="--reveal-delay: 120ms;">
+              <div class="icon-shell" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path d="M12 25c6-7 34-7 40 0" />
+                  <path d="M22 21c0-6 4-10 10-10s10 4 10 10" />
+                  <circle cx="32" cy="31" r="8" />
+                  <path d="M22 50v-9c0-5 4-9 10-9s10 4 10 9v9" />
+                  <path d="M10 50c8-5 14-7 22-7" />
+                  <path d="M54 50c-8-5-14-7-22-7" />
+                </svg>
+              </div>
+
+              <h3>Agricultores</h3>
+              <p>
+                Excedentes de safra perecem no campo quando nao existe conexao
+                imediata com pontos de distribuicao, redes solidarias ou canais
+                alternativos de escoamento.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="issue-card reveal" style="--reveal-delay: 240ms;">
+              <div class="icon-shell" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <circle cx="20" cy="25" r="7" />
+                  <circle cx="44" cy="25" r="7" />
+                  <circle cx="32" cy="18" r="6" />
+                  <path d="M13 51c1-8 8-14 17-14h4c9 0 16 6 17 14" />
+                  <path d="M18 42h28c0 6-5 10-14 10s-14-4-14-10Z" />
+                  <path d="M32 34c0-4 3-7 7-7" />
+                </svg>
+              </div>
+
+              <h3>Familias</h3>
+              <p>
+                A inseguranca alimentar continua alta em muitos territ&oacute;rios,
+                mesmo quando ha comida disponivel em outras pontas da mesma
+                cidade ou regiao.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucao" class="content-section section-soft">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-heading text-start reveal reveal-left">
+              <span class="section-tag">A Solucao ReFood</span>
+              <h2>Uma ponte simples entre quem tem excedente e quem precisa.</h2>
+              <p>
+                A plataforma organiza o cadastro de alimentos, prioriza conexoes
+                locais e acelera a retirada com rastreabilidade e visibilidade
+                de impacto.
+              </p>
+            </div>
+
+            <ul class="check-list reveal reveal-left" style="--reveal-delay: 120ms;">
+              <li>Cadastro rapido de alimentos e disponibilidade.</li>
+              <li>Conexao em tempo real com ONGs, familias e parceiros locais.</li>
+              <li>Retirada simplificada com pontos e horarios organizados.</li>
+              <li>Historico claro de impacto social, ambiental e operacional.</li>
+            </ul>
+
+            <div class="step-grid reveal reveal-left" style="--reveal-delay: 220ms;">
+              <article class="step-card">
+                <span class="step-index">01</span>
+                <h3>Cadastro</h3>
+                <p>Quem oferece informa tipo, volume e janela de retirada.</p>
+              </article>
+
+              <article class="step-card">
+                <span class="step-index">02</span>
+                <h3>Conexao</h3>
+                <p>O sistema cruza urgencia, proximidade e disponibilidade.</p>
+              </article>
+
+              <article class="step-card">
+                <span class="step-index">03</span>
+                <h3>Retirada</h3>
+                <p>O excedente chega mais rapido a quem pode redistribuir.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <figure class="solution-card reveal reveal-right">
+              <div class="solution-image-wrap">
+                <img
+                  src="assets/farmer.jpeg"
+                  alt="Agricultor usando o celular em uma plantacao"
+                  class="img-fluid"
+                />
+              </div>
+
+              <figcaption>
+                Operacao pensada para agricultores, varejo e redes de apoio
+                trabalharem no mesmo fluxo.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impacto" class="content-section impact-section">
+      <div class="container">
+        <div class="section-heading text-center reveal">
+          <span class="section-tag">Nosso impacto</span>
+          <h2>Indicadores que mostram o potencial da rede.</h2>
+          <p>
+            O foco nao e apenas redistribuir alimento, mas fazer isso com escala,
+            velocidade e beneficio real para quem mais precisa.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="impact-card reveal" style="--reveal-delay: 0ms;">
+              <div class="impact-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M11 18V9h10l16 16-10 10-16-16Z" />
+                  <circle cx="18" cy="16" r="2" />
+                </svg>
+              </div>
+              <span
+                class="impact-number"
+                data-counter
+                data-target="70"
+                data-suffix="%"
+                data-duration="1600"
+              >
+                0%
+              </span>
+              <h3>de desconto medio em alimentos</h3>
+              <p>
+                Excedentes em bom estado podem chegar a pre&ccedil;os mais acessiveis
+                em canais parceiros ou acoes sociais.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="impact-card reveal" style="--reveal-delay: 120ms;">
+              <div class="impact-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M8 20 24 10l16 10v18H8Z" />
+                  <path d="M17 38V26h14v12" />
+                  <path d="M13 20h22" />
+                </svg>
+              </div>
+              <span
+                class="impact-number"
+                data-counter
+                data-target="194"
+                data-duration="1800"
+              >
+                0
+              </span>
+              <h3>bancos de alimentos no Brasil</h3>
+              <p>
+                A rede de distribuicao existente mostra espaco real para ampliar
+                capilaridade e coordenacao local.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="impact-card reveal" style="--reveal-delay: 240ms;">
+              <div class="impact-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 38V22" />
+                  <path d="M24 22c-8 0-12-6-12-12 8 0 12 4 12 12Z" />
+                  <path d="M24 22c8 0 12-6 12-12-8 0-12 4-12 12Z" />
+                  <path d="M14 38c2-4 6-6 10-6s8 2 10 6" />
+                </svg>
+              </div>
+              <span
+                class="impact-number"
+                data-counter
+                data-target="4"
+                data-suffix=" milhoes"
+                data-duration="1800"
+              >
+                0 milhoes
+              </span>
+              <h3>de agricultores familiares impactados</h3>
+              <p>
+                Melhor escoamento reduz perdas no campo e abre mais previsibilidade
+                para producao local e distribuicao social.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="content-section section-soft">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <div class="section-heading text-start reveal">
+              <span class="section-tag">Fale com a equipe</span>
+              <h2>Vamos conversar sobre parcerias e pontos de retirada.</h2>
+              <p>
+                Se voce representa uma rede de varejo, ONG, produtor ou iniciativa
+                local, envie sua mensagem. O contato tambem pode ser feito por
+                email ou WhatsApp.
+              </p>
+            </div>
+
+            <div class="contact-shortcuts reveal" style="--reveal-delay: 120ms;">
+              <a class="contact-shortcut" href="mailto:contato@refood.com.br">
+                <span class="shortcut-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect x="7" y="11" width="34" height="26" rx="4" />
+                    <path d="M11 16 24 26l13-10" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Email direto</strong>
+                  <small>contato@refood.com.br</small>
+                </span>
+              </a>
+
+              <a
+                class="contact-shortcut"
+                href="https://wa.me/5511999999999?text=Oi%2C%20quero%20saber%20mais%20sobre%20o%20ReFood."
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="shortcut-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <path d="M14 39l2-7c-4-3-6-7-6-12 0-9 7-16 16-16s16 7 16 16-7 16-16 16c-4 0-7-1-10-3Z" />
+                    <path d="M19 21c2-2 8-2 10 0" />
+                    <path d="M21 27c2 1 4 2 6 2" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Contato rapido</strong>
+                  <small>WhatsApp para triagem inicial</small>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-card reveal" style="--reveal-delay: 160ms;">
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nome"
+                      name="nome"
+                      required
+                      minlength="3"
+                      placeholder="Digite seu nome"
+                    />
+                    <div class="invalid-feedback">
+                      Informe um nome com pelo menos 3 caracteres.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="Digite seu email"
+                    />
+                    <div class="invalid-feedback">
+                      Informe um email valido.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefone"
+                      name="telefone"
+                      required
+                      pattern="[0-9]{10,11}"
+                      placeholder="11999999999"
+                    />
+                    <div class="invalid-feedback">
+                      Use um telefone com 10 ou 11 numeros.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="perfil" class="form-label">Perfil</label>
+                    <select class="form-select" id="perfil" name="perfil" required>
+                      <option value="" selected disabled>Selecione uma opcao</option>
+                      <option>Supermercado</option>
+                      <option>Agricultor</option>
+                      <option>ONG ou banco de alimentos</option>
+                      <option>Familia ou comunidade</option>
+                      <option>Outro parceiro</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Escolha o perfil que melhor representa seu contato.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea
+                      class="form-control"
+                      id="mensagem"
+                      name="mensagem"
+                      required
+                      minlength="10"
+                      placeholder="Conte brevemente como sua organizacao pode participar."
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Escreva uma mensagem com pelo menos 10 caracteres.
+                    </div>
+                  </div>
+                </div>
+
+                <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+
+                <button type="submit" class="btn btn-primary btn-submit mt-4">
+                  <span class="btn-submit-text">Enviar mensagem</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 ReFood. Todos os direitos reservados.</p>
     </div>
-  </section>
-
-  <!-- PROBLEMA -->
-  <section id="problema" class="section">
-    <h2>O Problema</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Supermercados</h3>
-        <p>
-          Toneladas de alimentos são descartadas diariamente
-          por falta de logística e distribuição eficiente.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Agricultores</h3>
-        <p>
-          Excedentes da produção acabam apodrecendo
-          no campo sem aproveitamento.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Famílias</h3>
-        <p>
-          Milhares de famílias enfrentam insegurança alimentar
-          e dificuldade de acesso a produtos básicos.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SOLUÇÃO -->
-  <section id="solucao" class="section green">
-    <h2>A Solução ReFood</h2>
-
-    <div class="solution-content">
-
-      <div>
-        <h3>Como funciona?</h3>
-
-        <p>
-          O ReFood transforma excedentes alimentares
-          em valor real através de uma plataforma inteligente.
-        </p>
-
-        <ul>
-          <li>Cadastro de excedentes</li>
-          <li>Conexão em tempo real</li>
-          <li>Retirada simplificada</li>
-          <li>Créditos ReCoin</li>
-          <li>Impacto social e ambiental</li>
-        </ul>
-      </div>
-
-      <img src="assets/farmer.jpeg" alt="Agricultor usando celular">
-    </div>
-  </section>
-
-  <!-- IMPACTO -->
-  <section id="impacto" class="section">
-    <h2>Nosso Impacto</h2>
-
-    <div class="impact-grid">
-
-      <div class="impact-card">
-        <span class="number">70%</span>
-        <p>de desconto em alimentos</p>
-      </div>
-
-      <div class="impact-card">
-        <span class="number">194</span>
-        <p>bancos de alimentos no Brasil</p>
-      </div>
-
-      <div class="impact-card">
-        <span class="number">4 milhões</span>
-        <p>de agricultores familiares</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" class="section green">
-    <h2>Fale Conosco</h2>
-
-    <form id="contactForm">
-
-      <div class="input-group">
-        <label for="nome">Nome</label>
-
-        <input
-          type="text"
-          id="nome"
-          name="nome"
-          required
-          minlength="3"
-          placeholder="Digite seu nome"
-        >
-      </div>
-
-      <div class="input-group">
-        <label for="email">E-mail</label>
-
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Digite seu e-mail"
-        >
-      </div>
-
-      <div class="input-group">
-        <label for="telefone">Telefone</label>
-
-        <input
-          type="tel"
-          id="telefone"
-          name="telefone"
-          pattern="[0-9]{11}"
-          required
-          placeholder="11999999999"
-        >
-      </div>
-
-      <div class="input-group">
-        <label for="mensagem">Mensagem</label>
-
-        <textarea
-          id="mensagem"
-          name="mensagem"
-          required
-          minlength="10"
-          placeholder="Digite sua mensagem"
-        ></textarea>
-      </div>
-
-      <button type="submit" class="btn">
-        Enviar
-      </button>
-
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 ReFood - Todos os direitos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
