@@ -24,7 +24,74 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-0">
       <div class="container">
         <a class="navbar-brand brand-mark" href="#home">
-          <span>Re</span>Food
+          <svg
+            class="brand-logo"
+            viewBox="0 0 860 220"
+            role="img"
+            aria-label="ReFood"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="logoGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#eef9dc" />
+                <stop offset="55%" stop-color="#cceea0" />
+                <stop offset="100%" stop-color="#9ad33d" />
+              </linearGradient>
+              <filter id="logoSoftGlow" x="-8%" y="-10%" width="116%" height="130%">
+                <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#ffffff" flood-opacity="0.14" />
+              </filter>
+              <mask id="leafCut">
+                <rect width="220" height="120" fill="white" />
+                <path
+                  d="M20 72C74 47 125 47 194 38C154 70 113 86 58 92C45 93 31 88 20 72Z"
+                  fill="black"
+                />
+              </mask>
+            </defs>
+
+            <g filter="url(#logoSoftGlow)">
+              <text
+                x="0"
+                y="163"
+                fill="url(#logoGreen)"
+                font-family="'Arial Rounded MT Bold', Arial, Helvetica, sans-serif"
+                font-size="176"
+                font-weight="700"
+                letter-spacing="-10"
+              >
+                R
+              </text>
+              <text
+                x="118"
+                y="163"
+                fill="url(#logoGreen)"
+                font-family="'Arial Rounded MT Bold', Arial, Helvetica, sans-serif"
+                font-size="176"
+                font-weight="700"
+                letter-spacing="-10"
+              >
+                e
+              </text>
+
+              <path
+                d="M132 155C163 109 234 103 283 133C242 178 176 190 132 155Z"
+                fill="url(#logoGreen)"
+                mask="url(#leafCut)"
+              />
+
+              <text
+                x="262"
+                y="163"
+                fill="#ffffff"
+                font-family="'Arial Rounded MT Bold', Arial, Helvetica, sans-serif"
+                font-size="176"
+                font-weight="700"
+                letter-spacing="-10"
+              >
+                Food
+              </text>
+            </g>
+          </svg>
         </a>
 
         <button
