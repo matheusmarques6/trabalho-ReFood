@@ -63,34 +63,11 @@ h6 {
 section[id] {
   scroll-margin-top: 104px;
 }
-.site-header {
-  height: auto !important;
-  min-height: 76px !important;
-  padding: 0 !important;
-}
 
-.site-header .navbar {
-  min-height: 76px !important;
-  padding: 10px 0 !important;
-}
-
-.site-header .container {
-  min-height: auto !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.brand-logo-img {
-  height: 42px !important;
-  width: auto !important;
-  object-fit: contain;
-  display: block;
-}
 .site-header {
   position: fixed;
   inset: 0 0 auto;
   z-index: 1030;
-  padding: 1.05rem 0;
   background: rgba(12, 31, 20, 0.72);
   backdrop-filter: blur(14px);
   transition:
@@ -901,49 +878,4 @@ textarea.form-control {
     opacity: 1;
     transform: none;
   }
-}
-/* NAVBAR COMPACTA */
-.site-header {
-  height: 72px !important;
-  min-height: 72px !important;
-  max-height: 72px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-}
-
-.site-header .navbar {
-  height: 72px !important;
-  min-height: 72px !important;
-  max-height: 72px !important;
-  padding: 0 !important;
-}
-
-.site-header .container {
-  height: 72px !important;
-  min-height: 72px !important;
-  max-height: 72px !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
-/* LOGO MENOR */
-.brand-logo-img {
-  height: 30px !important;
-  max-height: 30px !important;
-  width: auto !important;
-  object-fit: contain !important;
-  display: block !important;
-}
-
-/* LINKS MAIS COMPACTOS */
-.navbar-nav .nav-link {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  line-height: 1 !important;
-}
-
-/* BOTÃO MAIS COMPACTO */
-.btn-nav-contact {
-  padding: 12px 20px !important;
-  line-height: 1 !important;
 }
